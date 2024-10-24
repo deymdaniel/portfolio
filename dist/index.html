@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel Biacan III</title>
     <link rel="stylesheet" href="/src/output.css" />
   </head>
-  <body class="font-sans bg-blueGray-900 text-slate-100">
+  <body class="font-sans bg-blueGray-900 text-slate-400 font-medium">
     <div
-      class="mx-auto min-h-screen max-w-screen-xl px-6 py-1 font-sans md:px-11 md:py-12 lg:px-24 lg:py-0"
+      class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
     >
       <div class="lg:flex lg:gap-4 lg:justify-between">
         <div
@@ -16,15 +16,23 @@
           id="leftNav"
         >
           <div id="info">
-            <h1 class="text-4xl sm:text-5xl font-black">Daniel Biacan III</h1>
-            <h2 class="text-xl sm:text-2xl font-bold">
+            <h1 class="text-4xl sm:text-5xl font-black text-white">
+              Daniel Biacan III
+            </h1>
+            <h2 class="text-xl sm:text-2xl font-bold text-white">
               Frontend Web Developer
             </h2>
           </div>
-          <div id="content" class="flex flex-col">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
+          <div id="content" class="flex flex-col gap-4 w-max">
+            <a href="#about" class="hidden lg:block uppercase font-bold"
+              >About</a
+            >
+            <a href="#experience" class="hidden lg:block uppercase font-bold"
+              >Experience</a
+            >
+            <a href="#projects" class="hidden lg:block uppercase font-bold"
+              >Projects</a
+            >
           </div>
           <div id="links"></div>
         </div>
@@ -33,18 +41,38 @@
           id="rightBody"
         >
           <div id="about">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni est
-            dolorem neque reprehenderit? Dolorum accusamus asperiores ipsum
-            earum voluptatibus ex porro eaque? Dolorem rem possimus alias
-            laborum ipsum autem tenetur.
+            <h1 class="lg:sr-only uppercase font-bold mb-4">About</h1>
+            <p class="mb-4">
+              Hi! I'm a web developer based in Manila, Philippines, currently
+              pursuing a BS Computer Science degree at
+              <a
+                href="https://www.ciit.edu.ph/"
+                class="text-white"
+                target="_blank"
+                >CIIT College of Arts and Technology</a
+              >. I specialize in frontend web development but also have some
+              experience working on the backend side of things.
+            </p>
+            <p class="mb-4">
+              Before diving into web development, I explored graphic design as a
+              hobby, which now helps me blend creativity with code to build
+              visually appealing and user-friendly websites.
+            </p>
+            <p>
+              When I'm not coding, you'll probably find me gaming, thrifting for
+              unique fashion finds, jamming to music, or catching up on the
+              latest adventures in One Piece.
+            </p>
           </div>
           <div id="experience">
+            <h1 class="lg:sr-only uppercase font-bold mb-4">Experience</h1>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
             dolor voluptatum recusandae iure sapiente eaque aspernatur
             consectetur repudiandae, officia sequi. Minus corporis veritatis
             illo fuga dolorem totam explicabo quia nostrum.
           </div>
           <div id="projects">
+            <h1 class="lg:sr-only uppercase font-bold mb-4">Projects</h1>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illo
             dolores ut saepe eos. Aperiam laboriosam quas cum nemo ipsum
             excepturi eligendi necessitatibus tenetur, alias voluptas ut maxime
